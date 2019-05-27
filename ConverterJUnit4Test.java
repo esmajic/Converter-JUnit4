@@ -39,5 +39,21 @@ public class ConverterJUnit4Test {
 	@After
 	public void tearDown1() {
 	}
+	
+	@Before
+	public void setUp2() {
+		convert = new ConverterJUnit4();
+		System.out.println("inchesToCms");
+	}
+
+	@Test
+	public void shouldConvertInchesToCms() {
+		double result = convert.inchesToCms(1.0);
+		assertEquals(2.540005, result, 0.001);
+	}
+
+	@After
+	public void tearDown2() {
+	}
 
 }
