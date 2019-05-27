@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ConverterJUnit4Test {
-	
+
 	ConverterJUnit4 convert;
 
 	@Before
@@ -23,7 +23,7 @@ public class ConverterJUnit4Test {
 	@After
 	public void tearDown() {
 	}
-	
+
 	@Before
 	public void setUp1() {
 		convert = new ConverterJUnit4();
@@ -39,7 +39,7 @@ public class ConverterJUnit4Test {
 	@After
 	public void tearDown1() {
 	}
-	
+
 	@Before
 	public void setUp2() {
 		convert = new ConverterJUnit4();
@@ -53,7 +53,23 @@ public class ConverterJUnit4Test {
 	}
 
 	@After
-	public void tearDown2() {
+	public void tearDown3() {
+	}
+
+	@Before
+	public void setUp2() {
+		convert = new ConverterJUnit4();
+		System.out.println("cmsToInches");
+	}
+
+	@Test
+	public void shouldConvertCmsToInches() {
+		double result = convert.cmsToInches(1.0);
+		assertEquals(0.39370, result, 0.001);
+	}
+
+	@After
+	public void tearDown3() {
 	}
 
 }
