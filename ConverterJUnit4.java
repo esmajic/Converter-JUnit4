@@ -16,4 +16,10 @@ public class ConverterJUnit4 {
 		return userInput / 0.39370;
 	}
 
+	public double cmsToInches(double userInput) {
+
+		return userInput * 0.39370;
+
+	}
+
 }

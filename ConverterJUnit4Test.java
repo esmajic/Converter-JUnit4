@@ -53,11 +53,11 @@ public class ConverterJUnit4Test {
 	}
 
 	@After
-	public void tearDown3() {
+	public void tearDown2() {
 	}
 
 	@Before
-	public void setUp2() {
+	public void setUp3() {
 		convert = new ConverterJUnit4();
 		System.out.println("cmsToInches");
 	}
