@@ -5,5 +5,10 @@ public class ConverterJUnit4 {
 
 		return userInput * 0.4535923;
 	}
+	
+	public double kgsToPounds(double userInput) {
+		
+		return userInput / 0.4535923;
+	}
 
 }

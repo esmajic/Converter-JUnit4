@@ -33,7 +33,7 @@ public class ConverterJUnit4Test {
 	@Test
 	public void shouldConvertKgsToPounds() {
 		double result = convert.kgsToPounds(1.0);
-		assertEquals(0.39370, result, 0.001);
+		assertEquals(2.2046229, result, 0.001);
 	}
 
 	@After
