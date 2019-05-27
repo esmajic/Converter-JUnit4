@@ -71,5 +71,21 @@ public class ConverterJUnit4Test {
 	@After
 	public void tearDown3() {
 	}
+	
+	@Before
+	public void setUp4() {
+		convert = new ConverterJUnit4();
+		System.out.println("cmsToInches");
+	}
+
+	@Test
+	public void shouldConvertFahrenheitToCelsius() {
+		double result = convert.fahrenheitToCelsius(1.0);
+		assertEquals(33.8, result, 0.1);
+	}
+
+	@After
+	public void tearDown4() {
+	}
 
 }
