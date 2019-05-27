@@ -75,7 +75,7 @@ public class ConverterJUnit4Test {
 	@Before
 	public void setUp4() {
 		convert = new ConverterJUnit4();
-		System.out.println("cmsToInches");
+		System.out.println("fahrenheitsToCelsius");
 	}
 
 	@Test
@@ -87,5 +87,22 @@ public class ConverterJUnit4Test {
 	@After
 	public void tearDown4() {
 	}
+	
+	@Before
+	public void setUp5() {
+		convert = new ConverterJUnit4();
+		System.out.println("celsiusToFahrenheits");
+	}
+
+	@Test
+	public void shouldConvertCelsiusToFahrenheits() {
+		double result = convert.fahrenheitToCelsius(1.0);
+		assertEquals(33.8, result, 0.1);
+	}
+
+	@After
+	public void tearDown5() {
+	}
+
 
 }
