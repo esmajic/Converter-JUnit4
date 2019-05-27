@@ -81,7 +81,7 @@ public class ConverterJUnit4Test {
 	@Test
 	public void shouldConvertFahrenheitToCelsius() {
 		double result = convert.fahrenheitToCelsius(1.0);
-		assertEquals(33.8, result, 0.1);
+		assertEquals(-17.2, result, 0.1);
 	}
 
 	@After
@@ -96,7 +96,7 @@ public class ConverterJUnit4Test {
 
 	@Test
 	public void shouldConvertCelsiusToFahrenheits() {
-		double result = convert.fahrenheitToCelsius(1.0);
+		double result = convert.celsiusToFahrenheit(1.0);
 		assertEquals(33.8, result, 0.1);
 	}
 
