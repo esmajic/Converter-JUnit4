@@ -21,5 +21,11 @@ public class ConverterJUnit4 {
 		return userInput * 0.39370;
 
 	}
+	
+	public double fahrenheitToCelsius(double userInput) {
+		
+		return userInput * 1.8000 + 32;
+		
+	}
 
 }
