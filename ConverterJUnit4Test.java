@@ -16,8 +16,8 @@ public class ConverterJUnit4Test {
 
 	@Test
 	public void shouldConvertPoundsToKilograms() {
-		double result = convert.poundsToKgs(1);
-		asserEquals(0.4535923, result);
+		double result = convert.poundsToKgs(1.0);
+		assertEquals(0.4535923, result, 0.01);
 	}
 
 	@After
